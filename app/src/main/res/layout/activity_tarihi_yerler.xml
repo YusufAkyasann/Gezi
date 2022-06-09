@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:id="@+id/mainLayout">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="kaleyetikla"
+            app:layout_constraintBottom_toBottomOf="@+id/txtHours"
+            app:layout_constraintTop_toBottomOf="@+id/txtHours">
+
+            <ImageView
+                android:id="@+id/kale"
+                android:layout_width="124dp"
+                android:layout_height="98dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.666"
+                app:srcCompat="@drawable/kale" />
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="54dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="96dp"
+                android:text="Kale"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/kale"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/etInfo"
+                android:layout_width="268dp"
+                android:layout_height="113dp"
+                android:ems="18"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:minHeight="48dp"
+                android:textAlignment="center"
+                android:text="226 metre yükseklikteki volkanik bir kaya kütlesi üzerinde yer alan Afyonkarahisar Kalesi, MÖ.1350 yılında Hitit İmparatoru II. Murşil zamanında, Arzava Seferi'nde müstahkem mevki olarak kullanılmış ve Hapanuva adını almıştır. Kale, Bizans ve Selçuklular zamanlarında da önemli çarpışmalara sahne olmuştur."
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/kale"
+                app:layout_constraintTop_toBottomOf="@+id/txtTitle"
+                app:layout_constraintVertical_bias="0.354"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

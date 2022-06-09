@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:id="@+id/mainLayout">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="parket"
+            app:layout_constraintBottom_toBottomOf="@+id/txtHours"
+            app:layout_constraintTop_toBottomOf="@+id/txtHours">
+
+            <ImageView
+                android:id="@+id/kale"
+                android:layout_width="124dp"
+                android:layout_height="98dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.68"
+                app:srcCompat="@drawable/arac" />
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="203dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="40dp"
+                android:text="Kadınana Kapalı Otoparkı"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/kale"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/etInfo"
+                android:layout_width="270dp"
+                android:layout_height="91dp"
+                android:ems="18"
+                android:inputType="textMultiLine"
+                android:minHeight="48dp"
+                android:text="İşletme Müdürlüğüne bağlı ilk iktisadi işletme olan Kadınana katlı otoparkı 09.07.2011 tarihinde işletilmeye başlamıştır.
+
+Otopark 7 gün 24 saat hizmet vermektedir.
+
+Otopark 236 araç park yeri kapasitesine sahiptir.
+
+Otopark ilk 30 dakika ücretsizdir."
+                android:textAlignment="center"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/kale"
+                app:layout_constraintTop_toBottomOf="@+id/txtTitle"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

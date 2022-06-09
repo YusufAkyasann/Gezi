@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kale">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="176dp"
+        android:layout_height="188dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ulu" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="407dp"
+        android:layout_height="189dp"
+        android:text="Selçuklu dönemine ait ahşap direkli
+Afyon Ulu Camii 1272 yılında inşa
+edilmiştir. Mihrapta adı geçen Sivastos
+oğlu Ali Bey tarafından yaptırıldığı kabul
+edilmektedir. 1341’de Mugīsüddin Emîr
+Îsâ b. Muzafferüddin tarafından onarıldığı
+onarım kitabesinde belirtilmektedir. Cami,
+1765, 1851, 1947 ve 1984 yıllarında bazı
+onarımlar geçirmiştir. Minberinin ahşap
+kapısı üzerinde yer alan kitâbede yapının
+ahşap işlerini yapan Neccâr Emîrihac Bey’in
+adı yazılıdır. Afyon Ulu Camii, Anadolu
+Selçuklu döneminden günümüze ulaşan
+ahşap direkli camiler grubuna ait bir örnek
+olup özgün mimarisiyle bu devrin önemli
+yapıları arasında sayılmaktadır."
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="116dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="20dp"
+        android:text="Puanı:5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="142dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="32dp"
+        android:text="Ulu Camii"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
